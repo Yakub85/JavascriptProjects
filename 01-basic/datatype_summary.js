@@ -30,8 +30,29 @@ let myObj = {
 const myFunction = function(){
     console.log("Chai aur Code");
 }
-myFunction()
-console.log(typeof myFunction);
+// myFunction()
+// console.log(typeof myFunction);
 // typeof return type of datatype
 
-console.log(typeof id);
+// console.log(typeof id);
+
+//===============================================
+
+//Stack(Primitive),Heap(Non-Primitive)
+
+let myYoutube = "Chai Aur Code"
+let anotherName = myYoutube
+anotherName = "Chai"
+console.log(anotherName);
+console.log(myYoutube);
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+ userTwo.email="users@gmail.com"
+
+ console.log(userOne);
+ console.log(userTwo);
