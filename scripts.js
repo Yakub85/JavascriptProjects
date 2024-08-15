@@ -141,3 +141,4 @@ const result=nums.reduce((prev,curr)=> prev + curr)
 
 console.log(result);
 
+
