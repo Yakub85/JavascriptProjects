@@ -138,7 +138,27 @@ const nums=[1,2,3,4,5]
 // })
 const result=nums.reduce((prev,curr)=> prev + curr)
 
+// console.log(result);
 
-console.log(result);
+//api section
 
+// https://dog.ceo/api/breeds/image/random 
+
+const dogImageDiv=document.getElementById('dogImage');
+
+const getNewDog=()=>{
+    fetch('https://dog.ceo/api/breeds/image/random ')
+    .then(res => res.json())
+    .then(json => {
+        console.log(json.message);
+        const path=json.message
+        dogImageDiv.innerHTML=`<img src="${path}" width=300 height=300/>`
+        
+    });
+}
+
+
+const getNewDogBtn=document.querySelector('.getNewDogBtn');
+
+getNewDogBtn.onclick =()=>getNewDog()
 
