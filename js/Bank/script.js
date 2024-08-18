@@ -35,6 +35,7 @@ depositBtn.onclick = ()=>{
     const amount=Number(amountInput.value)
     bank.deposit(amount);
     Balance.innerText=`Balance:₹${bank.balance}`
+    amountInput.value=' '
 }
 
 const withdrawBtn=document.getElementById('withdraw')
@@ -42,4 +43,5 @@ withdrawBtn.onclick = ()=>{
     const amount=Number(amountInput.value)
     bank.withdraw(amount);
     Balance.innerText=`Balance:₹${bank.balance}`;
+    amountInput.value=' '
 }
